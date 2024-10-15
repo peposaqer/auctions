@@ -110,6 +110,75 @@ const admin = require('../../firebase/firebaseAdmin');
 const catchAsync = require('../../utils/catchAsync');
 const AppError = require('../../utils/appError');
 
+
+
+
+
+
+// Endpoint to send a notification to a single FCM token
+exports.sendTestNotification = catchAsync(async (req, res, next) => {
+  const session = await mongoose.startSession();
+  session.startTransaction();
+  try {
+    // Get title, message, and fcmToken from request body
+    const { title, message, fcmToken } = req.body;
+
+    if (!fcmToken) {
+      return next(new AppError('FCM token is required', 400));
+    }
+
+    // Construct the notification payload
+    const firebaseMessage = {
+      notification: { title, body: message },
+      token: fcmToken,
+    };
+
+    // Send notification via Firebase
+    try {
+      const response = await admin.messaging().send(firebaseMessage);
+      await session.commitTransaction();
+      session.endSession();
+
+      res.status(200).json({
+        status: 'success',
+        data: {
+          message: 'Notification sent successfully',
+          response,
+        },
+      });
+    } catch (error) {
+      console.log(error)
+      await session.abortTransaction();
+      session.endSession();
+      return next(new AppError('Error sending notification', 500));
+    }
+  } catch (error) {
+    await session.abortTransaction();
+    session.endSession();
+    return next(new AppError('Transaction failed', 500));
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Send immediate notification
 exports.sendNotification = catchAsync(async (req, res, next) => {
   const session = await mongoose.startSession();

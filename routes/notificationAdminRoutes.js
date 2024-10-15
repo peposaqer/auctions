@@ -4,7 +4,9 @@ const notificationController = require('../controllers/NotifcationAdminControlle
 // const { protect, restrictTo } = require('../middlewares/authMiddleware'); // Assume you have these middlewares set up
 
 const router = express.Router();
-
+router.post('/send',
+  //  protect, restrictTo('admin'),
+notificationController.sendTestNotification);
 router.post('/send-global-notification',
     //  protect, restrictTo('admin'),
  notificationController.sendNotification);
