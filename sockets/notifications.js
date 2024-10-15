@@ -2418,7 +2418,7 @@ const processEndingSubcategories = async (now, notificationNamespace, session) =
 
       // Handle losers
       for (const item of items) {
-        const bids = await Bid.find({ item: item._id }).sort({ amount: -1 }).session(session);
+        const bids = await Bid.find({ item: item._id }).sort({ createdAt: -1 }).session(session);
         const winnerBid = bids[0];
 
         if (winnerBid) {
@@ -2866,7 +2866,7 @@ const handleLosers = async (item, winnerBid, subcategory, notificationNamespace,
       }
     },
     {
-      $sort: { totalAmount: -1 }
+      $sort: { createdAt: -1 }
     },
     {
       $project: {

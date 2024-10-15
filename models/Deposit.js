@@ -88,7 +88,7 @@ const depositSchema = new mongoose.Schema({
         name: String,
         path: String,
         pathname: String
-      },
+      },  
       required: function () {
         return this.billingmethod !== 'wallet';
       },

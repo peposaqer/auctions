@@ -41,7 +41,7 @@ const walletcontroller = require('./routes/WalletControllerRoute');
 const refundRoutes = require('./routes/refundRoutes');
 const paymentMethodinfo = require('./routes/paymentMethodRoutes');
 const refundedDeposite = require('./routes/depositeRefundedRoute');
-
+const subcategoryRouter = require('./routes/TestingLosersroute'); 
 const notificationAdminRoutes = require('./routes/notificationAdminRoutes');
 require('./controllers/NotifcationAdminController/sendScheduledNotifications');
 // const allowedOrigins = ['http://localhost:3000', 'http://localhost:8888'];
@@ -143,6 +143,7 @@ app.use('/api/v1/notificationsadmin', notificationAdminRoutes);
 
 
 
+app.use('/api/subcategories', subcategoryRouter);
 app.use('/api/v1/admin', adminRoutes);
 app.use('/api/v1/apppermissions', apppermissionRoutes);
 app.use('/api/v1/permissions', permissionRoutes);

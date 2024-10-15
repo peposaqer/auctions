@@ -14543,3 +14543,966 @@
     at ConnectionPool.interruptInUseConnections (G:\mazadat\node_modules\mongodb\lib\cmap\connection_pool.js:264:36)
     at G:\mazadat\node_modules\mongodb\lib\cmap\connection_pool.js:252:41
     at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-10-14T13:03:04.264Z info: Subcategory results aggregation completed.
+2024-10-14T13:03:14.255Z info: Subcategory results aggregation completed.
+2024-10-14T13:03:24.255Z info: Subcategory results aggregation completed.
+2024-10-14T13:03:34.259Z info: Subcategory results aggregation completed.
+2024-10-14T13:03:44.272Z info: Subcategory results aggregation completed.
+2024-10-14T13:03:54.275Z info: Subcategory results aggregation completed.
+2024-10-14T13:04:04.287Z info: Subcategory results aggregation completed.
+2024-10-14T13:04:14.299Z info: Subcategory results aggregation completed.
+2024-10-14T13:04:24.312Z info: Subcategory results aggregation completed.
+2024-10-14T13:04:44.623Z error: MongoServerError: Transaction numbers are only allowed on a replica set member or mongos
+    at Connection.sendCommand (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.command (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:304:26)
+    at async Server.command (G:\auctions\node_modules\mongodb\lib\sdam\server.js:169:24)
+    at async executeOperation (G:\auctions\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+    at async FindCursor._initialize (G:\auctions\node_modules\mongodb\lib\cursor\find_cursor.js:55:26)
+    at async [kInit] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:454:27)
+    at async next (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:514:13)
+    at async [Symbol.asyncIterator] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:160:34)
+    at async FindCursor.toArray (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:26)
+2024-10-14T13:25:10.530Z error: MongoServerError: Transaction numbers are only allowed on a replica set member or mongos
+    at Connection.sendCommand (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.command (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:304:26)
+    at async Server.command (G:\auctions\node_modules\mongodb\lib\sdam\server.js:169:24)
+    at async executeOperation (G:\auctions\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+    at async FindCursor._initialize (G:\auctions\node_modules\mongodb\lib\cursor\find_cursor.js:55:26)
+    at async [kInit] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:454:27)
+    at async next (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:514:13)
+    at async [Symbol.asyncIterator] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:160:34)
+    at async FindCursor.toArray (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:26)
+2024-10-14T13:25:36.553Z error: MongoServerError: Transaction numbers are only allowed on a replica set member or mongos
+    at Connection.sendCommand (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.command (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:304:26)
+    at async Server.command (G:\auctions\node_modules\mongodb\lib\sdam\server.js:169:24)
+    at async executeOperation (G:\auctions\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+    at async FindCursor._initialize (G:\auctions\node_modules\mongodb\lib\cursor\find_cursor.js:55:26)
+    at async [kInit] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:454:27)
+    at async next (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:514:13)
+    at async [Symbol.asyncIterator] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:160:34)
+    at async FindCursor.toArray (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:26)
+2024-10-14T13:26:03.737Z error: MongoServerError: Transaction numbers are only allowed on a replica set member or mongos
+    at Connection.sendCommand (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.command (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:304:26)
+    at async Server.command (G:\auctions\node_modules\mongodb\lib\sdam\server.js:169:24)
+    at async executeOperation (G:\auctions\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+    at async FindCursor._initialize (G:\auctions\node_modules\mongodb\lib\cursor\find_cursor.js:55:26)
+    at async [kInit] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:454:27)
+    at async next (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:514:13)
+    at async [Symbol.asyncIterator] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:160:34)
+    at async FindCursor.toArray (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:26)
+2024-10-14T13:26:41.576Z error: MongoServerError: Transaction numbers are only allowed on a replica set member or mongos
+    at Connection.sendCommand (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.command (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:304:26)
+    at async Server.command (G:\auctions\node_modules\mongodb\lib\sdam\server.js:169:24)
+    at async executeOperation (G:\auctions\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+    at async FindCursor._initialize (G:\auctions\node_modules\mongodb\lib\cursor\find_cursor.js:55:26)
+    at async [kInit] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:454:27)
+    at async next (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:514:13)
+    at async [Symbol.asyncIterator] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:160:34)
+    at async FindCursor.toArray (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:26)
+2024-10-14T13:26:55.431Z info: Subcategory results aggregation completed.
+2024-10-14T13:27:05.439Z info: Subcategory results aggregation completed.
+2024-10-14T13:27:15.431Z info: Subcategory results aggregation completed.
+2024-10-14T13:27:25.450Z info: Subcategory results aggregation completed.
+2024-10-14T13:27:35.449Z info: Subcategory results aggregation completed.
+2024-10-14T13:27:45.456Z info: Subcategory results aggregation completed.
+2024-10-14T13:27:55.472Z info: Subcategory results aggregation completed.
+2024-10-14T13:28:05.484Z info: Subcategory results aggregation completed.
+2024-10-14T13:28:15.486Z info: Subcategory results aggregation completed.
+2024-10-14T13:28:25.493Z info: Subcategory results aggregation completed.
+2024-10-14T13:28:35.494Z info: Subcategory results aggregation completed.
+2024-10-14T13:28:45.503Z info: Subcategory results aggregation completed.
+2024-10-14T13:28:55.520Z info: Subcategory results aggregation completed.
+2024-10-14T13:29:05.530Z info: Subcategory results aggregation completed.
+2024-10-14T13:29:15.570Z info: Subcategory results aggregation completed.
+2024-10-14T13:29:25.577Z info: Subcategory results aggregation completed.
+2024-10-14T13:29:35.575Z info: Subcategory results aggregation completed.
+2024-10-14T13:29:45.588Z info: Subcategory results aggregation completed.
+2024-10-14T13:29:55.604Z info: Subcategory results aggregation completed.
+2024-10-14T13:30:05.609Z info: Subcategory results aggregation completed.
+2024-10-14T13:30:15.621Z info: Subcategory results aggregation completed.
+2024-10-14T13:30:25.629Z info: Subcategory results aggregation completed.
+2024-10-14T13:30:35.644Z info: Subcategory results aggregation completed.
+2024-10-14T13:32:59.571Z info: Subcategory results aggregation completed.
+2024-10-14T13:33:09.571Z info: Subcategory results aggregation completed.
+2024-10-14T13:33:19.555Z info: Subcategory results aggregation completed.
+2024-10-14T13:33:29.558Z info: Subcategory results aggregation completed.
+2024-10-14T13:33:39.661Z info: Subcategory results aggregation completed.
+2024-10-14T13:33:49.588Z info: Subcategory results aggregation completed.
+2024-10-14T13:33:59.646Z info: Subcategory results aggregation completed.
+2024-10-14T13:34:09.606Z info: Subcategory results aggregation completed.
+2024-10-14T13:34:19.620Z info: Subcategory results aggregation completed.
+2024-10-14T13:34:29.634Z info: Subcategory results aggregation completed.
+2024-10-14T13:34:39.636Z info: Subcategory results aggregation completed.
+2024-10-14T13:34:49.652Z info: Subcategory results aggregation completed.
+2024-10-14T13:34:59.665Z info: Subcategory results aggregation completed.
+2024-10-14T13:35:09.677Z info: Subcategory results aggregation completed.
+2024-10-14T13:35:19.670Z info: Subcategory results aggregation completed.
+2024-10-14T13:35:41.405Z info: Subcategory results aggregation completed.
+2024-10-14T13:35:51.390Z info: Subcategory results aggregation completed.
+2024-10-14T13:36:01.394Z info: Subcategory results aggregation completed.
+2024-10-14T13:36:11.402Z info: Subcategory results aggregation completed.
+2024-10-14T13:36:21.404Z info: Subcategory results aggregation completed.
+2024-10-14T13:36:31.438Z info: Subcategory results aggregation completed.
+2024-10-14T13:36:41.446Z info: Subcategory results aggregation completed.
+2024-10-14T13:36:51.586Z info: Subcategory results aggregation completed.
+2024-10-14T13:37:01.494Z info: Subcategory results aggregation completed.
+2024-10-14T13:37:11.498Z info: Subcategory results aggregation completed.
+2024-10-14T13:37:21.526Z info: Subcategory results aggregation completed.
+2024-10-14T13:37:31.524Z info: Subcategory results aggregation completed.
+2024-10-14T13:37:41.531Z info: Subcategory results aggregation completed.
+2024-10-14T13:37:51.570Z info: Subcategory results aggregation completed.
+2024-10-14T13:38:01.561Z info: Subcategory results aggregation completed.
+2024-10-14T13:38:11.610Z info: Subcategory results aggregation completed.
+2024-10-14T13:38:21.645Z info: Subcategory results aggregation completed.
+2024-10-14T13:38:32.204Z info: Subcategory results aggregation completed.
+2024-10-14T13:38:41.659Z info: Subcategory results aggregation completed.
+2024-10-14T13:38:51.678Z info: Subcategory results aggregation completed.
+2024-10-14T13:39:01.772Z info: Subcategory results aggregation completed.
+2024-10-14T13:39:11.729Z info: Subcategory results aggregation completed.
+2024-10-14T13:39:21.719Z info: Subcategory results aggregation completed.
+2024-10-14T13:39:31.718Z info: Subcategory results aggregation completed.
+2024-10-14T13:39:41.723Z info: Subcategory results aggregation completed.
+2024-10-14T13:39:51.749Z info: Subcategory results aggregation completed.
+2024-10-14T13:40:01.916Z info: Subcategory results aggregation completed.
+2024-10-14T13:40:11.797Z info: Subcategory results aggregation completed.
+2024-10-14T13:40:21.807Z info: Subcategory results aggregation completed.
+2024-10-14T13:40:31.811Z info: Subcategory results aggregation completed.
+2024-10-14T13:40:41.826Z info: Subcategory results aggregation completed.
+2024-10-14T13:40:51.846Z info: Subcategory results aggregation completed.
+2024-10-14T13:41:01.858Z info: Subcategory results aggregation completed.
+2024-10-14T13:41:11.858Z info: Subcategory results aggregation completed.
+2024-10-14T13:41:21.946Z info: Subcategory results aggregation completed.
+2024-10-14T13:41:31.996Z info: Subcategory results aggregation completed.
+2024-10-14T13:41:41.911Z info: Subcategory results aggregation completed.
+2024-10-14T13:41:51.911Z info: Subcategory results aggregation completed.
+2024-10-14T13:42:01.932Z info: Subcategory results aggregation completed.
+2024-10-14T13:42:11.927Z info: Subcategory results aggregation completed.
+2024-10-14T13:42:21.927Z info: Subcategory results aggregation completed.
+2024-10-14T13:42:31.944Z info: Subcategory results aggregation completed.
+2024-10-14T13:42:41.944Z info: Subcategory results aggregation completed.
+2024-10-14T13:42:51.950Z info: Subcategory results aggregation completed.
+2024-10-14T13:43:01.950Z info: Subcategory results aggregation completed.
+2024-10-14T13:43:12.018Z info: Subcategory results aggregation completed.
+2024-10-14T13:43:22.013Z info: Subcategory results aggregation completed.
+2024-10-14T13:43:32.022Z info: Subcategory results aggregation completed.
+2024-10-14T13:43:42.029Z info: Subcategory results aggregation completed.
+2024-10-14T13:43:52.054Z info: Subcategory results aggregation completed.
+2024-10-14T13:44:02.038Z info: Subcategory results aggregation completed.
+2024-10-14T13:44:12.052Z info: Subcategory results aggregation completed.
+2024-10-14T13:44:22.073Z info: Subcategory results aggregation completed.
+2024-10-14T13:44:32.073Z info: Subcategory results aggregation completed.
+2024-10-14T13:44:42.084Z info: Subcategory results aggregation completed.
+2024-10-14T13:44:52.216Z info: Subcategory results aggregation completed.
+2024-10-14T13:45:02.101Z info: Subcategory results aggregation completed.
+2024-10-14T13:45:12.115Z info: Subcategory results aggregation completed.
+2024-10-14T13:45:22.115Z info: Subcategory results aggregation completed.
+2024-10-14T13:45:32.120Z info: Subcategory results aggregation completed.
+2024-10-14T13:45:42.144Z info: Subcategory results aggregation completed.
+2024-10-14T13:45:52.148Z info: Subcategory results aggregation completed.
+2024-10-14T13:46:02.166Z info: Subcategory results aggregation completed.
+2024-10-14T13:46:12.165Z info: Subcategory results aggregation completed.
+2024-10-14T13:46:22.167Z info: Subcategory results aggregation completed.
+2024-10-14T13:46:32.178Z info: Subcategory results aggregation completed.
+2024-10-14T13:46:42.185Z info: Subcategory results aggregation completed.
+2024-10-14T13:46:52.197Z info: Subcategory results aggregation completed.
+2024-10-14T13:47:02.202Z info: Subcategory results aggregation completed.
+2024-10-14T13:47:12.206Z info: Subcategory results aggregation completed.
+2024-10-14T13:47:22.217Z info: Subcategory results aggregation completed.
+2024-10-14T13:47:32.258Z info: Subcategory results aggregation completed.
+2024-10-14T13:47:43.303Z error: MongoServerError: Caused by :: Write conflict during plan execution and yielding is disabled. :: Please retry your operation or multi-document transaction.
+    at Connection.sendCommand (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.command (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:304:26)
+    at async Server.command (G:\auctions\node_modules\mongodb\lib\sdam\server.js:169:24)
+    at async UpdateOneOperation.execute (G:\auctions\node_modules\mongodb\lib\operations\update.js:67:21)
+    at async executeOperation (G:\auctions\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+2024-10-14T13:50:40.368Z info: Subcategory results aggregation completed.
+2024-10-14T13:50:50.361Z info: Subcategory results aggregation completed.
+2024-10-14T13:51:00.389Z info: Subcategory results aggregation completed.
+2024-10-14T13:51:10.392Z info: Subcategory results aggregation completed.
+2024-10-14T13:51:20.334Z info: Subcategory results aggregation completed.
+2024-10-14T13:51:30.416Z info: Subcategory results aggregation completed.
+2024-10-14T13:51:40.425Z info: Subcategory results aggregation completed.
+2024-10-14T13:51:50.414Z info: Subcategory results aggregation completed.
+2024-10-14T13:52:06.812Z info: Subcategory results aggregation completed.
+2024-10-14T13:52:16.838Z info: Subcategory results aggregation completed.
+2024-10-14T13:52:26.847Z info: Subcategory results aggregation completed.
+2024-10-14T13:52:36.847Z info: Subcategory results aggregation completed.
+2024-10-14T13:52:46.844Z info: Subcategory results aggregation completed.
+2024-10-14T13:52:56.853Z info: Subcategory results aggregation completed.
+2024-10-14T13:53:06.870Z info: Subcategory results aggregation completed.
+2024-10-14T13:53:16.878Z info: Subcategory results aggregation completed.
+2024-10-14T13:53:26.878Z info: Subcategory results aggregation completed.
+2024-10-14T13:53:36.880Z info: Subcategory results aggregation completed.
+2024-10-14T13:53:46.893Z info: Subcategory results aggregation completed.
+2024-10-14T13:53:56.902Z info: Subcategory results aggregation completed.
+2024-10-14T13:54:06.914Z info: Subcategory results aggregation completed.
+2024-10-14T13:54:16.932Z info: Subcategory results aggregation completed.
+2024-10-14T13:54:32.563Z info: Subcategory results aggregation completed.
+2024-10-14T13:54:36.932Z info: Subcategory results aggregation completed.
+2024-10-14T13:54:46.941Z info: Subcategory results aggregation completed.
+2024-10-14T13:54:56.951Z info: Subcategory results aggregation completed.
+2024-10-14T13:55:06.955Z info: Subcategory results aggregation completed.
+2024-10-14T13:55:16.965Z info: Subcategory results aggregation completed.
+2024-10-15T07:19:27.241Z info: Subcategory results aggregation completed.
+2024-10-15T07:19:37.229Z info: Subcategory results aggregation completed.
+2024-10-15T07:19:47.230Z info: Subcategory results aggregation completed.
+2024-10-15T07:19:57.243Z info: Subcategory results aggregation completed.
+2024-10-15T07:20:07.247Z info: Subcategory results aggregation completed.
+2024-10-15T07:20:17.262Z info: Subcategory results aggregation completed.
+2024-10-15T07:20:27.267Z info: Subcategory results aggregation completed.
+2024-10-15T07:20:37.276Z info: Subcategory results aggregation completed.
+2024-10-15T07:20:47.275Z info: Subcategory results aggregation completed.
+2024-10-15T07:20:57.286Z info: Subcategory results aggregation completed.
+2024-10-15T07:21:07.301Z info: Subcategory results aggregation completed.
+2024-10-15T07:21:17.311Z info: Subcategory results aggregation completed.
+2024-10-15T07:21:27.311Z info: Subcategory results aggregation completed.
+2024-10-15T07:21:37.332Z info: Subcategory results aggregation completed.
+2024-10-15T07:21:47.324Z info: Subcategory results aggregation completed.
+2024-10-15T07:21:57.333Z info: Subcategory results aggregation completed.
+2024-10-15T07:22:07.334Z info: Subcategory results aggregation completed.
+2024-10-15T07:22:17.345Z info: Subcategory results aggregation completed.
+2024-10-15T07:22:27.346Z info: Subcategory results aggregation completed.
+2024-10-15T07:22:37.352Z info: Subcategory results aggregation completed.
+2024-10-15T07:22:55.979Z info: Subcategory results aggregation completed.
+2024-10-15T07:23:05.971Z info: Subcategory results aggregation completed.
+2024-10-15T07:23:15.972Z info: Subcategory results aggregation completed.
+2024-10-15T07:23:37.463Z info: Subcategory results aggregation completed.
+2024-10-15T07:23:47.465Z info: Subcategory results aggregation completed.
+2024-10-15T07:23:57.487Z info: Subcategory results aggregation completed.
+2024-10-15T07:24:07.489Z info: Subcategory results aggregation completed.
+2024-10-15T07:24:17.487Z info: Subcategory results aggregation completed.
+2024-10-15T07:24:27.500Z info: Subcategory results aggregation completed.
+2024-10-15T07:24:37.514Z info: Subcategory results aggregation completed.
+2024-10-15T07:24:47.518Z info: Subcategory results aggregation completed.
+2024-10-15T07:24:57.527Z info: Subcategory results aggregation completed.
+2024-10-15T07:25:07.464Z info: Subcategory results aggregation completed.
+2024-10-15T07:25:17.466Z info: Subcategory results aggregation completed.
+2024-10-15T07:25:27.472Z info: Subcategory results aggregation completed.
+2024-10-15T07:25:37.486Z info: Subcategory results aggregation completed.
+2024-10-15T07:25:47.485Z info: Subcategory results aggregation completed.
+2024-10-15T07:25:57.495Z info: Subcategory results aggregation completed.
+2024-10-15T07:26:07.522Z info: Subcategory results aggregation completed.
+2024-10-15T07:26:17.523Z info: Subcategory results aggregation completed.
+2024-10-15T07:26:27.536Z info: Subcategory results aggregation completed.
+2024-10-15T07:26:37.544Z info: Subcategory results aggregation completed.
+2024-10-15T07:26:54.180Z info: Subcategory results aggregation completed.
+2024-10-15T07:28:12.897Z info: Subcategory results aggregation completed.
+2024-10-15T07:28:22.908Z info: Subcategory results aggregation completed.
+2024-10-15T07:28:32.906Z info: Subcategory results aggregation completed.
+2024-10-15T07:28:42.912Z info: Subcategory results aggregation completed.
+2024-10-15T07:28:52.910Z info: Subcategory results aggregation completed.
+2024-10-15T07:29:02.923Z info: Subcategory results aggregation completed.
+2024-10-15T07:29:12.926Z info: Subcategory results aggregation completed.
+2024-10-15T07:29:22.940Z info: Subcategory results aggregation completed.
+2024-10-15T07:29:32.941Z info: Subcategory results aggregation completed.
+2024-10-15T07:29:42.941Z info: Subcategory results aggregation completed.
+2024-10-15T07:29:52.953Z info: Subcategory results aggregation completed.
+2024-10-15T07:30:02.952Z info: Subcategory results aggregation completed.
+2024-10-15T07:30:12.966Z info: Subcategory results aggregation completed.
+2024-10-15T07:30:22.994Z info: Subcategory results aggregation completed.
+2024-10-15T07:30:32.975Z info: Subcategory results aggregation completed.
+2024-10-15T07:30:42.974Z info: Subcategory results aggregation completed.
+2024-10-15T07:30:52.978Z info: Subcategory results aggregation completed.
+2024-10-15T07:31:02.994Z info: Subcategory results aggregation completed.
+2024-10-15T07:31:13.048Z info: Subcategory results aggregation completed.
+2024-10-15T07:31:23.004Z info: Subcategory results aggregation completed.
+2024-10-15T07:31:33.005Z info: Subcategory results aggregation completed.
+2024-10-15T07:31:43.015Z info: Subcategory results aggregation completed.
+2024-10-15T07:31:53.016Z info: Subcategory results aggregation completed.
+2024-10-15T07:32:03.018Z info: Subcategory results aggregation completed.
+2024-10-15T07:32:13.020Z info: Subcategory results aggregation completed.
+2024-10-15T07:32:23.030Z info: Subcategory results aggregation completed.
+2024-10-15T07:32:33.035Z info: Subcategory results aggregation completed.
+2024-10-15T07:32:43.061Z info: Subcategory results aggregation completed.
+2024-10-15T07:32:53.072Z info: Subcategory results aggregation completed.
+2024-10-15T07:33:03.067Z info: Subcategory results aggregation completed.
+2024-10-15T07:33:13.081Z info: Subcategory results aggregation completed.
+2024-10-15T07:33:23.086Z info: Subcategory results aggregation completed.
+2024-10-15T07:33:33.087Z info: Subcategory results aggregation completed.
+2024-10-15T07:33:43.135Z info: Subcategory results aggregation completed.
+2024-10-15T07:33:53.101Z info: Subcategory results aggregation completed.
+2024-10-15T07:34:03.108Z info: Subcategory results aggregation completed.
+2024-10-15T07:34:13.113Z info: Subcategory results aggregation completed.
+2024-10-15T07:34:23.117Z info: Subcategory results aggregation completed.
+2024-10-15T07:34:33.119Z info: Subcategory results aggregation completed.
+2024-10-15T07:34:43.134Z info: Subcategory results aggregation completed.
+2024-10-15T07:34:53.139Z info: Subcategory results aggregation completed.
+2024-10-15T07:35:03.143Z info: Subcategory results aggregation completed.
+2024-10-15T07:35:13.152Z info: Subcategory results aggregation completed.
+2024-10-15T07:35:23.165Z info: Subcategory results aggregation completed.
+2024-10-15T07:35:33.177Z info: Subcategory results aggregation completed.
+2024-10-15T07:35:43.178Z info: Subcategory results aggregation completed.
+2024-10-15T07:35:53.178Z info: Subcategory results aggregation completed.
+2024-10-15T07:36:03.192Z info: Subcategory results aggregation completed.
+2024-10-15T07:36:13.203Z info: Subcategory results aggregation completed.
+2024-10-15T07:36:23.216Z info: Subcategory results aggregation completed.
+2024-10-15T07:36:33.219Z info: Subcategory results aggregation completed.
+2024-10-15T07:36:43.240Z info: Subcategory results aggregation completed.
+2024-10-15T07:36:53.246Z info: Subcategory results aggregation completed.
+2024-10-15T07:37:03.275Z info: Subcategory results aggregation completed.
+2024-10-15T07:37:13.261Z info: Subcategory results aggregation completed.
+2024-10-15T07:37:23.283Z info: Subcategory results aggregation completed.
+2024-10-15T07:37:33.281Z info: Subcategory results aggregation completed.
+2024-10-15T07:37:43.283Z info: Subcategory results aggregation completed.
+2024-10-15T07:37:53.312Z info: Subcategory results aggregation completed.
+2024-10-15T07:38:03.306Z info: Subcategory results aggregation completed.
+2024-10-15T07:38:13.306Z info: Subcategory results aggregation completed.
+2024-10-15T07:38:23.342Z info: Subcategory results aggregation completed.
+2024-10-15T07:38:33.335Z info: Subcategory results aggregation completed.
+2024-10-15T07:38:43.338Z info: Subcategory results aggregation completed.
+2024-10-15T07:38:53.353Z info: Subcategory results aggregation completed.
+2024-10-15T07:39:03.353Z info: Subcategory results aggregation completed.
+2024-10-15T07:39:13.366Z info: Subcategory results aggregation completed.
+2024-10-15T07:39:23.368Z info: Subcategory results aggregation completed.
+2024-10-15T07:39:33.401Z info: Subcategory results aggregation completed.
+2024-10-15T07:39:43.383Z info: Subcategory results aggregation completed.
+2024-10-15T07:39:53.393Z info: Subcategory results aggregation completed.
+2024-10-15T07:40:03.402Z info: Subcategory results aggregation completed.
+2024-10-15T07:40:13.405Z info: Subcategory results aggregation completed.
+2024-10-15T07:40:23.418Z info: Subcategory results aggregation completed.
+2024-10-15T07:40:33.431Z info: Subcategory results aggregation completed.
+2024-10-15T07:40:43.440Z info: Subcategory results aggregation completed.
+2024-10-15T07:40:53.445Z info: Subcategory results aggregation completed.
+2024-10-15T07:41:03.453Z info: Subcategory results aggregation completed.
+2024-10-15T07:41:13.467Z info: Subcategory results aggregation completed.
+2024-10-15T07:41:32.663Z info: Subcategory results aggregation completed.
+2024-10-15T07:41:40.562Z info: Subcategory results aggregation completed.
+2024-10-15T07:41:50.565Z info: Subcategory results aggregation completed.
+2024-10-15T07:42:00.596Z info: Subcategory results aggregation completed.
+2024-10-15T07:42:10.579Z info: Subcategory results aggregation completed.
+2024-10-15T07:42:20.588Z info: Subcategory results aggregation completed.
+2024-10-15T07:42:30.589Z info: Subcategory results aggregation completed.
+2024-10-15T07:42:40.597Z info: Subcategory results aggregation completed.
+2024-10-15T07:42:50.635Z info: Subcategory results aggregation completed.
+2024-10-15T07:43:00.614Z info: Subcategory results aggregation completed.
+2024-10-15T07:43:10.616Z info: Subcategory results aggregation completed.
+2024-10-15T07:43:20.620Z info: Subcategory results aggregation completed.
+2024-10-15T07:43:30.624Z info: Subcategory results aggregation completed.
+2024-10-15T07:43:40.639Z info: Subcategory results aggregation completed.
+2024-10-15T07:43:50.638Z info: Subcategory results aggregation completed.
+2024-10-15T07:44:00.659Z info: Subcategory results aggregation completed.
+2024-10-15T07:44:10.658Z info: Subcategory results aggregation completed.
+2024-10-15T07:44:20.661Z info: Subcategory results aggregation completed.
+2024-10-15T07:44:32.787Z info: Subcategory results aggregation completed.
+2024-10-15T07:44:40.676Z info: Subcategory results aggregation completed.
+2024-10-15T07:44:50.684Z info: Subcategory results aggregation completed.
+2024-10-15T07:45:00.701Z info: Subcategory results aggregation completed.
+2024-10-15T07:45:18.424Z info: Subcategory results aggregation completed.
+2024-10-15T07:45:51.812Z info: Subcategory results aggregation completed.
+2024-10-15T07:46:01.822Z info: Subcategory results aggregation completed.
+2024-10-15T07:46:11.820Z info: Subcategory results aggregation completed.
+2024-10-15T07:46:21.821Z info: Subcategory results aggregation completed.
+2024-10-15T07:46:31.825Z info: Subcategory results aggregation completed.
+2024-10-15T07:46:41.839Z info: Subcategory results aggregation completed.
+2024-10-15T07:46:51.840Z info: Subcategory results aggregation completed.
+2024-10-15T07:47:01.856Z info: Subcategory results aggregation completed.
+2024-10-15T07:47:21.383Z info: Subcategory results aggregation completed.
+2024-10-15T07:47:32.879Z info: Subcategory results aggregation completed.
+2024-10-15T07:47:41.370Z info: Subcategory results aggregation completed.
+2024-10-15T07:47:51.386Z info: Subcategory results aggregation completed.
+2024-10-15T07:48:01.397Z info: Subcategory results aggregation completed.
+2024-10-15T07:48:11.408Z info: Subcategory results aggregation completed.
+2024-10-15T07:48:21.418Z info: Subcategory results aggregation completed.
+2024-10-15T07:48:31.435Z info: Subcategory results aggregation completed.
+2024-10-15T07:48:41.431Z info: Subcategory results aggregation completed.
+2024-10-15T07:48:51.441Z info: Subcategory results aggregation completed.
+2024-10-15T07:49:01.386Z info: Subcategory results aggregation completed.
+2024-10-15T07:49:11.392Z info: Subcategory results aggregation completed.
+2024-10-15T07:49:21.401Z info: Subcategory results aggregation completed.
+2024-10-15T07:49:31.401Z info: Subcategory results aggregation completed.
+2024-10-15T07:49:41.410Z info: Subcategory results aggregation completed.
+2024-10-15T07:49:51.410Z info: Subcategory results aggregation completed.
+2024-10-15T07:50:01.411Z info: Subcategory results aggregation completed.
+2024-10-15T07:50:11.416Z info: Subcategory results aggregation completed.
+2024-10-15T07:50:21.422Z info: Subcategory results aggregation completed.
+2024-10-15T07:50:32.811Z info: Subcategory results aggregation completed.
+2024-10-15T07:50:41.430Z info: Subcategory results aggregation completed.
+2024-10-15T07:50:51.436Z info: Subcategory results aggregation completed.
+2024-10-15T07:51:01.449Z info: Subcategory results aggregation completed.
+2024-10-15T07:51:11.460Z info: Subcategory results aggregation completed.
+2024-10-15T07:51:21.522Z info: Subcategory results aggregation completed.
+2024-10-15T07:51:31.470Z info: Subcategory results aggregation completed.
+2024-10-15T07:51:41.495Z info: Subcategory results aggregation completed.
+2024-10-15T07:51:51.500Z info: Subcategory results aggregation completed.
+2024-10-15T07:52:01.507Z info: Subcategory results aggregation completed.
+2024-10-15T07:52:11.514Z info: Subcategory results aggregation completed.
+2024-10-15T07:52:21.530Z info: Subcategory results aggregation completed.
+2024-10-15T07:52:31.531Z info: Subcategory results aggregation completed.
+2024-10-15T07:52:41.535Z info: Subcategory results aggregation completed.
+2024-10-15T07:52:51.548Z info: Subcategory results aggregation completed.
+2024-10-15T07:53:01.552Z info: Subcategory results aggregation completed.
+2024-10-15T07:53:11.567Z info: Subcategory results aggregation completed.
+2024-10-15T07:53:21.572Z info: Subcategory results aggregation completed.
+2024-10-15T07:53:32.683Z info: Subcategory results aggregation completed.
+2024-10-15T07:53:41.583Z info: Subcategory results aggregation completed.
+2024-10-15T07:53:51.592Z info: Subcategory results aggregation completed.
+2024-10-15T07:54:01.654Z info: Subcategory results aggregation completed.
+2024-10-15T07:54:11.602Z info: Subcategory results aggregation completed.
+2024-10-15T07:54:27.208Z info: Subcategory results aggregation completed.
+2024-10-15T07:54:37.196Z info: Subcategory results aggregation completed.
+2024-10-15T07:54:47.207Z info: Subcategory results aggregation completed.
+2024-10-15T07:54:57.209Z info: Subcategory results aggregation completed.
+2024-10-15T07:55:07.229Z info: Subcategory results aggregation completed.
+2024-10-15T07:55:17.235Z info: Subcategory results aggregation completed.
+2024-10-15T07:55:27.238Z info: Subcategory results aggregation completed.
+2024-10-15T07:55:37.249Z info: Subcategory results aggregation completed.
+2024-10-15T07:55:47.264Z info: Subcategory results aggregation completed.
+2024-10-15T07:55:57.262Z info: Subcategory results aggregation completed.
+2024-10-15T07:56:07.263Z info: Subcategory results aggregation completed.
+2024-10-15T07:56:17.290Z info: Subcategory results aggregation completed.
+2024-10-15T07:56:27.326Z info: Subcategory results aggregation completed.
+2024-10-15T07:56:37.290Z info: Subcategory results aggregation completed.
+2024-10-15T07:56:53.843Z error: MongoServerError: Caused by :: Write conflict during plan execution and yielding is disabled. :: Please retry your operation or multi-document transaction.
+    at Connection.sendCommand (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.command (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:304:26)
+    at async Server.command (G:\auctions\node_modules\mongodb\lib\sdam\server.js:169:24)
+    at async UpdateOneOperation.execute (G:\auctions\node_modules\mongodb\lib\operations\update.js:67:21)
+    at async executeOperation (G:\auctions\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+2024-10-15T07:57:54.566Z error: MongoServerError: Transaction with { txnNumber: 1 } has been aborted.
+    at Connection.sendCommand (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.command (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:304:26)
+    at async Server.command (G:\auctions\node_modules\mongodb\lib\sdam\server.js:169:24)
+    at async executeOperation (G:\auctions\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+    at async AggregationCursor._initialize (G:\auctions\node_modules\mongodb\lib\cursor\aggregation_cursor.js:46:26)
+    at async [kInit] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:454:27)
+    at async next (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:514:13)
+    at async [Symbol.asyncIterator] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:160:34)
+    at async AggregationCursor.toArray (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:26)
+2024-10-15T07:57:54.680Z error: MongoServerError: Transaction with { txnNumber: 1 } has been aborted.
+    at Connection.sendCommand (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.command (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:304:26)
+    at async Server.command (G:\auctions\node_modules\mongodb\lib\sdam\server.js:169:24)
+    at async executeOperation (G:\auctions\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+    at async AggregationCursor._initialize (G:\auctions\node_modules\mongodb\lib\cursor\aggregation_cursor.js:46:26)
+    at async [kInit] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:454:27)
+    at async next (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:514:13)
+    at async [Symbol.asyncIterator] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:160:34)
+    at async AggregationCursor.toArray (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:26)
+2024-10-15T07:58:18.047Z error: MongoServerError: Caused by :: Write conflict during plan execution and yielding is disabled. :: Please retry your operation or multi-document transaction.
+    at Connection.sendCommand (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.command (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:304:26)
+    at async Server.command (G:\auctions\node_modules\mongodb\lib\sdam\server.js:169:24)
+    at async UpdateOneOperation.execute (G:\auctions\node_modules\mongodb\lib\operations\update.js:67:21)
+    at async executeOperation (G:\auctions\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+2024-10-15T08:01:19.719Z error: MongoServerError: Caused by :: Write conflict during plan execution and yielding is disabled. :: Please retry your operation or multi-document transaction.
+    at Connection.sendCommand (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.command (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:304:26)
+    at async Server.command (G:\auctions\node_modules\mongodb\lib\sdam\server.js:169:24)
+    at async UpdateOneOperation.execute (G:\auctions\node_modules\mongodb\lib\operations\update.js:67:21)
+    at async executeOperation (G:\auctions\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+2024-10-15T08:01:37.224Z error: MongoServerError: Caused by :: Write conflict during plan execution and yielding is disabled. :: Please retry your operation or multi-document transaction.
+    at Connection.sendCommand (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.command (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:304:26)
+    at async Server.command (G:\auctions\node_modules\mongodb\lib\sdam\server.js:169:24)
+    at async UpdateOneOperation.execute (G:\auctions\node_modules\mongodb\lib\operations\update.js:67:21)
+    at async executeOperation (G:\auctions\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+2024-10-15T08:02:37.836Z error: MongoServerError: Caused by :: Write conflict during plan execution and yielding is disabled. :: Please retry your operation or multi-document transaction.
+    at Connection.sendCommand (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.command (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:304:26)
+    at async Server.command (G:\auctions\node_modules\mongodb\lib\sdam\server.js:169:24)
+    at async UpdateOneOperation.execute (G:\auctions\node_modules\mongodb\lib\operations\update.js:67:21)
+    at async executeOperation (G:\auctions\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+2024-10-15T08:04:19.276Z error: MongoServerError: Transaction with { txnNumber: 1 } has been aborted.
+    at Connection.sendCommand (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.command (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:304:26)
+    at async Server.command (G:\auctions\node_modules\mongodb\lib\sdam\server.js:169:24)
+    at async executeOperation (G:\auctions\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+    at async AggregationCursor._initialize (G:\auctions\node_modules\mongodb\lib\cursor\aggregation_cursor.js:46:26)
+    at async [kInit] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:454:27)
+    at async next (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:514:13)
+    at async [Symbol.asyncIterator] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:160:34)
+    at async AggregationCursor.toArray (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:26)
+2024-10-15T08:04:19.370Z error: MongoServerError: Transaction with { txnNumber: 1 } has been aborted.
+    at Connection.sendCommand (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.command (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:304:26)
+    at async Server.command (G:\auctions\node_modules\mongodb\lib\sdam\server.js:169:24)
+    at async executeOperation (G:\auctions\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+    at async AggregationCursor._initialize (G:\auctions\node_modules\mongodb\lib\cursor\aggregation_cursor.js:46:26)
+    at async [kInit] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:454:27)
+    at async next (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:514:13)
+    at async [Symbol.asyncIterator] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:160:34)
+    at async AggregationCursor.toArray (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:26)
+2024-10-15T08:04:29.392Z error: MongoServerError: Transaction with { txnNumber: 2 } has been aborted.
+    at Connection.sendCommand (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.command (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:304:26)
+    at async Server.command (G:\auctions\node_modules\mongodb\lib\sdam\server.js:169:24)
+    at async executeOperation (G:\auctions\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+    at async AggregationCursor._initialize (G:\auctions\node_modules\mongodb\lib\cursor\aggregation_cursor.js:46:26)
+    at async [kInit] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:454:27)
+    at async next (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:514:13)
+    at async [Symbol.asyncIterator] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:160:34)
+    at async AggregationCursor.toArray (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:26)
+2024-10-15T08:04:29.493Z error: MongoServerError: Transaction with { txnNumber: 2 } has been aborted.
+    at Connection.sendCommand (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.command (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:304:26)
+    at async Server.command (G:\auctions\node_modules\mongodb\lib\sdam\server.js:169:24)
+    at async executeOperation (G:\auctions\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+    at async AggregationCursor._initialize (G:\auctions\node_modules\mongodb\lib\cursor\aggregation_cursor.js:46:26)
+    at async [kInit] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:454:27)
+    at async next (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:514:13)
+    at async [Symbol.asyncIterator] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:160:34)
+    at async AggregationCursor.toArray (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:26)
+2024-10-15T08:04:52.786Z error: MongoServerError: Caused by :: Write conflict during plan execution and yielding is disabled. :: Please retry your operation or multi-document transaction.
+    at Connection.sendCommand (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.command (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:304:26)
+    at async Server.command (G:\auctions\node_modules\mongodb\lib\sdam\server.js:169:24)
+    at async UpdateOneOperation.execute (G:\auctions\node_modules\mongodb\lib\operations\update.js:67:21)
+    at async executeOperation (G:\auctions\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+2024-10-15T08:31:34.607Z error: MongoServerError: Transaction with { txnNumber: 1 } has been aborted.
+    at Connection.sendCommand (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.command (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:304:26)
+    at async Server.command (G:\auctions\node_modules\mongodb\lib\sdam\server.js:169:24)
+    at async executeOperation (G:\auctions\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+    at async AggregationCursor._initialize (G:\auctions\node_modules\mongodb\lib\cursor\aggregation_cursor.js:46:26)
+    at async [kInit] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:454:27)
+    at async next (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:514:13)
+    at async [Symbol.asyncIterator] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:160:34)
+    at async AggregationCursor.toArray (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:26)
+2024-10-15T08:31:34.701Z error: MongoServerError: Transaction with { txnNumber: 1 } has been aborted.
+    at Connection.sendCommand (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:281:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Connection.command (G:\auctions\node_modules\mongodb\lib\cmap\connection.js:304:26)
+    at async Server.command (G:\auctions\node_modules\mongodb\lib\sdam\server.js:169:24)
+    at async executeOperation (G:\auctions\node_modules\mongodb\lib\operations\execute_operation.js:126:16)
+    at async AggregationCursor._initialize (G:\auctions\node_modules\mongodb\lib\cursor\aggregation_cursor.js:46:26)
+    at async [kInit] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:454:27)
+    at async next (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:514:13)
+    at async [Symbol.asyncIterator] (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:160:34)
+    at async AggregationCursor.toArray (G:\auctions\node_modules\mongodb\lib\cursor\abstract_cursor.js:273:26)
+2024-10-15T08:33:11.407Z info: Subcategory results aggregation completed.
+2024-10-15T08:33:13.315Z info: Subcategory results aggregation completed.
+2024-10-15T08:33:22.877Z info: Subcategory results aggregation completed.
+2024-10-15T08:33:32.897Z info: Subcategory results aggregation completed.
+2024-10-15T08:33:42.914Z info: Subcategory results aggregation completed.
+2024-10-15T08:33:52.916Z info: Subcategory results aggregation completed.
+2024-10-15T08:34:02.965Z info: Subcategory results aggregation completed.
+2024-10-15T08:34:12.928Z info: Subcategory results aggregation completed.
+2024-10-15T08:34:22.999Z info: Subcategory results aggregation completed.
+2024-10-15T08:34:36.960Z info: Subcategory results aggregation completed.
+2024-10-15T08:34:46.958Z info: Subcategory results aggregation completed.
+2024-10-15T08:34:56.968Z info: Subcategory results aggregation completed.
+2024-10-15T08:35:06.984Z info: Subcategory results aggregation completed.
+2024-10-15T08:35:16.983Z info: Subcategory results aggregation completed.
+2024-10-15T08:35:26.994Z info: Subcategory results aggregation completed.
+2024-10-15T08:35:36.994Z info: Subcategory results aggregation completed.
+2024-10-15T08:35:47.010Z info: Subcategory results aggregation completed.
+2024-10-15T08:35:57.017Z info: Subcategory results aggregation completed.
+2024-10-15T08:36:07.027Z info: Subcategory results aggregation completed.
+2024-10-15T08:36:17.028Z info: Subcategory results aggregation completed.
+2024-10-15T08:36:27.033Z info: Subcategory results aggregation completed.
+2024-10-15T08:36:37.051Z info: Subcategory results aggregation completed.
+2024-10-15T08:36:47.048Z info: Subcategory results aggregation completed.
+2024-10-15T08:36:57.061Z info: Subcategory results aggregation completed.
+2024-10-15T08:37:07.076Z info: Subcategory results aggregation completed.
+2024-10-15T08:37:17.081Z info: Subcategory results aggregation completed.
+2024-10-15T08:37:27.095Z info: Subcategory results aggregation completed.
+2024-10-15T08:37:37.096Z info: Subcategory results aggregation completed.
+2024-10-15T08:37:47.103Z info: Subcategory results aggregation completed.
+2024-10-15T08:37:57.113Z info: Subcategory results aggregation completed.
+2024-10-15T08:38:07.125Z info: Subcategory results aggregation completed.
+2024-10-15T08:38:17.125Z info: Subcategory results aggregation completed.
+2024-10-15T08:38:27.133Z info: Subcategory results aggregation completed.
+2024-10-15T08:38:37.132Z info: Subcategory results aggregation completed.
+2024-10-15T08:38:47.149Z info: Subcategory results aggregation completed.
+2024-10-15T08:38:57.151Z info: Subcategory results aggregation completed.
+2024-10-15T08:39:07.166Z info: Subcategory results aggregation completed.
+2024-10-15T08:39:17.168Z info: Subcategory results aggregation completed.
+2024-10-15T08:39:27.169Z info: Subcategory results aggregation completed.
+2024-10-15T08:39:37.186Z info: Subcategory results aggregation completed.
+2024-10-15T08:39:47.201Z info: Subcategory results aggregation completed.
+2024-10-15T08:39:57.204Z info: Subcategory results aggregation completed.
+2024-10-15T08:40:07.208Z info: Subcategory results aggregation completed.
+2024-10-15T08:40:17.218Z info: Subcategory results aggregation completed.
+2024-10-15T08:40:27.221Z info: Subcategory results aggregation completed.
+2024-10-15T08:40:37.235Z info: Subcategory results aggregation completed.
+2024-10-15T08:40:47.238Z info: Subcategory results aggregation completed.
+2024-10-15T08:40:57.244Z info: Subcategory results aggregation completed.
+2024-10-15T08:41:07.250Z info: Subcategory results aggregation completed.
+2024-10-15T08:41:17.253Z info: Subcategory results aggregation completed.
+2024-10-15T08:41:27.247Z info: Subcategory results aggregation completed.
+2024-10-15T08:41:37.277Z info: Subcategory results aggregation completed.
+2024-10-15T08:41:47.256Z info: Subcategory results aggregation completed.
+2024-10-15T08:41:57.255Z info: Subcategory results aggregation completed.
+2024-10-15T08:42:07.271Z info: Subcategory results aggregation completed.
+2024-10-15T08:42:17.277Z info: Subcategory results aggregation completed.
+2024-10-15T08:42:27.282Z info: Subcategory results aggregation completed.
+2024-10-15T08:42:37.297Z info: Subcategory results aggregation completed.
+2024-10-15T08:42:47.306Z info: Subcategory results aggregation completed.
+2024-10-15T08:42:57.325Z info: Subcategory results aggregation completed.
+2024-10-15T08:43:07.330Z info: Subcategory results aggregation completed.
+2024-10-15T08:43:17.345Z info: Subcategory results aggregation completed.
+2024-10-15T08:43:27.356Z info: Subcategory results aggregation completed.
+2024-10-15T08:43:37.357Z info: Subcategory results aggregation completed.
+2024-10-15T08:43:47.365Z info: Subcategory results aggregation completed.
+2024-10-15T08:43:57.411Z info: Subcategory results aggregation completed.
+2024-10-15T08:44:07.447Z info: Subcategory results aggregation completed.
+2024-10-15T08:44:17.448Z info: Subcategory results aggregation completed.
+2024-10-15T08:44:27.464Z info: Subcategory results aggregation completed.
+2024-10-15T08:44:37.468Z info: Subcategory results aggregation completed.
+2024-10-15T08:44:47.471Z info: Subcategory results aggregation completed.
+2024-10-15T08:44:57.481Z info: Subcategory results aggregation completed.
+2024-10-15T08:45:07.496Z info: Subcategory results aggregation completed.
+2024-10-15T08:45:17.495Z info: Subcategory results aggregation completed.
+2024-10-15T08:45:27.510Z info: Subcategory results aggregation completed.
+2024-10-15T08:45:37.524Z info: Subcategory results aggregation completed.
+2024-10-15T08:45:47.531Z info: Subcategory results aggregation completed.
+2024-10-15T08:45:57.538Z info: Subcategory results aggregation completed.
+2024-10-15T08:46:07.551Z info: Subcategory results aggregation completed.
+2024-10-15T08:46:17.564Z info: Subcategory results aggregation completed.
+2024-10-15T08:46:27.570Z info: Subcategory results aggregation completed.
+2024-10-15T08:46:37.606Z info: Subcategory results aggregation completed.
+2024-10-15T08:46:47.587Z info: Subcategory results aggregation completed.
+2024-10-15T08:46:57.587Z info: Subcategory results aggregation completed.
+2024-10-15T08:47:07.593Z info: Subcategory results aggregation completed.
+2024-10-15T08:47:17.597Z info: Subcategory results aggregation completed.
+2024-10-15T08:47:27.597Z info: Subcategory results aggregation completed.
+2024-10-15T08:47:37.601Z info: Subcategory results aggregation completed.
+2024-10-15T08:47:47.606Z info: Subcategory results aggregation completed.
+2024-10-15T08:47:57.614Z info: Subcategory results aggregation completed.
+2024-10-15T08:48:07.624Z info: Subcategory results aggregation completed.
+2024-10-15T08:48:17.625Z info: Subcategory results aggregation completed.
+2024-10-15T08:48:27.637Z info: Subcategory results aggregation completed.
+2024-10-15T08:48:37.646Z info: Subcategory results aggregation completed.
+2024-10-15T08:48:47.649Z info: Subcategory results aggregation completed.
+2024-10-15T08:48:57.653Z info: Subcategory results aggregation completed.
+2024-10-15T08:49:07.655Z info: Subcategory results aggregation completed.
+2024-10-15T08:49:17.659Z info: Subcategory results aggregation completed.
+2024-10-15T08:49:27.674Z info: Subcategory results aggregation completed.
+2024-10-15T08:49:37.681Z info: Subcategory results aggregation completed.
+2024-10-15T08:49:47.691Z info: Subcategory results aggregation completed.
+2024-10-15T08:49:57.700Z info: Subcategory results aggregation completed.
+2024-10-15T08:50:07.702Z info: Subcategory results aggregation completed.
+2024-10-15T08:50:17.716Z info: Subcategory results aggregation completed.
+2024-10-15T08:50:27.722Z info: Subcategory results aggregation completed.
+2024-10-15T08:50:37.725Z info: Subcategory results aggregation completed.
+2024-10-15T08:50:47.737Z info: Subcategory results aggregation completed.
+2024-10-15T08:50:57.745Z info: Subcategory results aggregation completed.
+2024-10-15T08:51:07.754Z info: Subcategory results aggregation completed.
+2024-10-15T08:51:17.767Z info: Subcategory results aggregation completed.
+2024-10-15T08:51:27.770Z info: Subcategory results aggregation completed.
+2024-10-15T08:51:37.773Z info: Subcategory results aggregation completed.
+2024-10-15T08:51:47.776Z info: Subcategory results aggregation completed.
+2024-10-15T08:51:57.795Z info: Subcategory results aggregation completed.
+2024-10-15T08:52:07.798Z info: Subcategory results aggregation completed.
+2024-10-15T08:52:17.800Z info: Subcategory results aggregation completed.
+2024-10-15T08:52:27.806Z info: Subcategory results aggregation completed.
+2024-10-15T08:52:37.811Z info: Subcategory results aggregation completed.
+2024-10-15T08:52:47.825Z info: Subcategory results aggregation completed.
+2024-10-15T08:52:57.837Z info: Subcategory results aggregation completed.
+2024-10-15T08:53:07.861Z info: Subcategory results aggregation completed.
+2024-10-15T08:53:17.870Z info: Subcategory results aggregation completed.
+2024-10-15T08:53:27.873Z info: Subcategory results aggregation completed.
+2024-10-15T08:53:37.885Z info: Subcategory results aggregation completed.
+2024-10-15T08:53:47.901Z info: Subcategory results aggregation completed.
+2024-10-15T08:53:57.908Z info: Subcategory results aggregation completed.
+2024-10-15T08:54:07.907Z info: Subcategory results aggregation completed.
+2024-10-15T08:54:17.918Z info: Subcategory results aggregation completed.
+2024-10-15T08:54:27.946Z info: Subcategory results aggregation completed.
+2024-10-15T08:54:37.958Z info: Subcategory results aggregation completed.
+2024-10-15T08:54:47.969Z info: Subcategory results aggregation completed.
+2024-10-15T08:54:57.978Z info: Subcategory results aggregation completed.
+2024-10-15T08:55:07.978Z info: Subcategory results aggregation completed.
+2024-10-15T08:55:18.028Z info: Subcategory results aggregation completed.
+2024-10-15T08:55:28.031Z info: Subcategory results aggregation completed.
+2024-10-15T08:55:38.042Z info: Subcategory results aggregation completed.
+2024-10-15T08:55:48.046Z info: Subcategory results aggregation completed.
+2024-10-15T08:55:58.050Z info: Subcategory results aggregation completed.
+2024-10-15T08:56:08.057Z info: Subcategory results aggregation completed.
+2024-10-15T08:56:18.057Z info: Subcategory results aggregation completed.
+2024-10-15T08:56:28.068Z info: Subcategory results aggregation completed.
+2024-10-15T08:56:38.081Z info: Subcategory results aggregation completed.
+2024-10-15T08:56:48.086Z info: Subcategory results aggregation completed.
+2024-10-15T08:56:58.097Z info: Subcategory results aggregation completed.
+2024-10-15T08:57:08.098Z info: Subcategory results aggregation completed.
+2024-10-15T08:57:18.100Z info: Subcategory results aggregation completed.
+2024-10-15T08:57:28.103Z info: Subcategory results aggregation completed.
+2024-10-15T08:57:38.115Z info: Subcategory results aggregation completed.
+2024-10-15T08:57:48.124Z info: Subcategory results aggregation completed.
+2024-10-15T08:57:58.127Z info: Subcategory results aggregation completed.
+2024-10-15T08:58:08.142Z info: Subcategory results aggregation completed.
+2024-10-15T08:58:18.141Z info: Subcategory results aggregation completed.
+2024-10-15T08:58:28.151Z info: Subcategory results aggregation completed.
+2024-10-15T08:58:38.158Z info: Subcategory results aggregation completed.
+2024-10-15T08:58:48.163Z info: Subcategory results aggregation completed.
+2024-10-15T08:58:58.175Z info: Subcategory results aggregation completed.
+2024-10-15T08:59:08.226Z info: Subcategory results aggregation completed.
+2024-10-15T08:59:18.182Z info: Subcategory results aggregation completed.
+2024-10-15T08:59:28.214Z info: Subcategory results aggregation completed.
+2024-10-15T08:59:38.204Z info: Subcategory results aggregation completed.
+2024-10-15T08:59:48.210Z info: Subcategory results aggregation completed.
+2024-10-15T08:59:58.221Z info: Subcategory results aggregation completed.
+2024-10-15T09:00:08.223Z info: Subcategory results aggregation completed.
+2024-10-15T09:00:18.229Z info: Subcategory results aggregation completed.
+2024-10-15T09:00:28.244Z info: Subcategory results aggregation completed.
+2024-10-15T09:00:38.256Z info: Subcategory results aggregation completed.
+2024-10-15T09:00:48.284Z info: Subcategory results aggregation completed.
+2024-10-15T09:00:58.280Z info: Subcategory results aggregation completed.
+2024-10-15T09:01:08.283Z info: Subcategory results aggregation completed.
+2024-10-15T09:01:18.294Z info: Subcategory results aggregation completed.
+2024-10-15T09:01:28.314Z info: Subcategory results aggregation completed.
+2024-10-15T09:01:38.324Z info: Subcategory results aggregation completed.
+2024-10-15T09:01:59.611Z info: Subcategory results aggregation completed.
+2024-10-15T09:02:09.600Z info: Subcategory results aggregation completed.
+2024-10-15T09:02:19.612Z info: Subcategory results aggregation completed.
+2024-10-15T09:02:29.612Z info: Subcategory results aggregation completed.
+2024-10-15T09:02:39.655Z info: Subcategory results aggregation completed.
+2024-10-15T09:02:49.663Z info: Subcategory results aggregation completed.
+2024-10-15T09:02:59.660Z info: Subcategory results aggregation completed.
+2024-10-15T09:03:09.661Z info: Subcategory results aggregation completed.
+2024-10-15T09:03:19.666Z info: Subcategory results aggregation completed.
+2024-10-15T09:03:29.677Z info: Subcategory results aggregation completed.
+2024-10-15T09:03:39.678Z info: Subcategory results aggregation completed.
+2024-10-15T09:03:49.683Z info: Subcategory results aggregation completed.
+2024-10-15T09:03:59.689Z info: Subcategory results aggregation completed.
+2024-10-15T09:04:09.699Z info: Subcategory results aggregation completed.
+2024-10-15T09:04:19.703Z info: Subcategory results aggregation completed.
+2024-10-15T09:04:29.714Z info: Subcategory results aggregation completed.
+2024-10-15T09:04:39.730Z info: Subcategory results aggregation completed.
+2024-10-15T09:04:49.735Z info: Subcategory results aggregation completed.
+2024-10-15T09:04:59.742Z info: Subcategory results aggregation completed.
+2024-10-15T09:05:09.748Z info: Subcategory results aggregation completed.
+2024-10-15T09:05:19.751Z info: Subcategory results aggregation completed.
+2024-10-15T09:05:29.758Z info: Subcategory results aggregation completed.
+2024-10-15T09:05:39.769Z info: Subcategory results aggregation completed.
+2024-10-15T09:05:49.787Z info: Subcategory results aggregation completed.
+2024-10-15T09:05:59.775Z info: Subcategory results aggregation completed.
+2024-10-15T09:06:09.785Z info: Subcategory results aggregation completed.
+2024-10-15T09:06:19.790Z info: Subcategory results aggregation completed.
+2024-10-15T09:06:29.792Z info: Subcategory results aggregation completed.
+2024-10-15T09:06:39.800Z info: Subcategory results aggregation completed.
+2024-10-15T09:06:49.811Z info: Subcategory results aggregation completed.
+2024-10-15T09:06:59.820Z info: Subcategory results aggregation completed.
+2024-10-15T09:07:09.841Z info: Subcategory results aggregation completed.
+2024-10-15T09:07:19.845Z info: Subcategory results aggregation completed.
+2024-10-15T09:07:29.851Z info: Subcategory results aggregation completed.
+2024-10-15T09:07:39.853Z info: Subcategory results aggregation completed.
+2024-10-15T09:07:49.887Z info: Subcategory results aggregation completed.
+2024-10-15T09:07:59.870Z info: Subcategory results aggregation completed.
+2024-10-15T09:08:09.884Z info: Subcategory results aggregation completed.
+2024-10-15T09:08:19.889Z info: Subcategory results aggregation completed.
+2024-10-15T09:08:29.917Z info: Subcategory results aggregation completed.
+2024-10-15T09:08:39.895Z info: Subcategory results aggregation completed.
+2024-10-15T09:08:49.899Z info: Subcategory results aggregation completed.
+2024-10-15T09:09:14.738Z info: Subcategory results aggregation completed.
+2024-10-15T09:09:24.729Z info: Subcategory results aggregation completed.
+2024-10-15T09:09:34.756Z info: Subcategory results aggregation completed.
+2024-10-15T09:09:44.748Z info: Subcategory results aggregation completed.
+2024-10-15T09:09:54.767Z info: Subcategory results aggregation completed.
+2024-10-15T09:10:04.771Z info: Subcategory results aggregation completed.
+2024-10-15T09:10:14.778Z info: Subcategory results aggregation completed.
+2024-10-15T09:10:24.780Z info: Subcategory results aggregation completed.
+2024-10-15T09:10:48.634Z info: Subcategory results aggregation completed.
+2024-10-15T09:10:58.615Z info: Subcategory results aggregation completed.
+2024-10-15T09:11:08.625Z info: Subcategory results aggregation completed.
+2024-10-15T09:11:18.616Z info: Subcategory results aggregation completed.
+2024-10-15T09:11:28.639Z info: Subcategory results aggregation completed.
+2024-10-15T09:11:38.641Z info: Subcategory results aggregation completed.
+2024-10-15T09:11:48.649Z info: Subcategory results aggregation completed.
+2024-10-15T09:11:58.595Z info: Subcategory results aggregation completed.
+2024-10-15T09:12:08.605Z info: Subcategory results aggregation completed.
+2024-10-15T09:12:18.641Z info: Subcategory results aggregation completed.
+2024-10-15T09:12:28.629Z info: Subcategory results aggregation completed.
+2024-10-15T09:12:38.639Z info: Subcategory results aggregation completed.
+2024-10-15T09:12:48.645Z info: Subcategory results aggregation completed.
+2024-10-15T09:13:13.436Z info: Subcategory results aggregation completed.
+2024-10-15T09:13:23.422Z info: Subcategory results aggregation completed.
+2024-10-15T09:13:33.434Z info: Subcategory results aggregation completed.
+2024-10-15T09:13:43.495Z info: Subcategory results aggregation completed.
+2024-10-15T09:13:53.483Z info: Subcategory results aggregation completed.
+2024-10-15T09:14:03.484Z info: Subcategory results aggregation completed.
+2024-10-15T09:14:13.503Z info: Subcategory results aggregation completed.
+2024-10-15T09:14:23.485Z info: Subcategory results aggregation completed.
+2024-10-15T09:14:33.498Z info: Subcategory results aggregation completed.
+2024-10-15T09:14:57.300Z info: Subcategory results aggregation completed.
+2024-10-15T09:15:07.293Z info: Subcategory results aggregation completed.
+2024-10-15T09:15:17.301Z info: Subcategory results aggregation completed.
+2024-10-15T09:15:27.305Z info: Subcategory results aggregation completed.
+2024-10-15T09:15:37.311Z info: Subcategory results aggregation completed.
+2024-10-15T09:15:56.051Z info: Subcategory results aggregation completed.
+2024-10-15T09:16:06.011Z info: Subcategory results aggregation completed.
+2024-10-15T09:16:16.019Z info: Subcategory results aggregation completed.
+2024-10-15T09:16:26.022Z info: Subcategory results aggregation completed.
+2024-10-15T09:16:36.034Z info: Subcategory results aggregation completed.
+2024-10-15T09:16:46.069Z info: Subcategory results aggregation completed.
+2024-10-15T09:17:08.952Z info: Subcategory results aggregation completed.
+2024-10-15T09:17:18.965Z info: Subcategory results aggregation completed.
+2024-10-15T09:17:28.955Z info: Subcategory results aggregation completed.
+2024-10-15T09:17:38.961Z info: Subcategory results aggregation completed.
+2024-10-15T09:17:48.970Z info: Subcategory results aggregation completed.
+2024-10-15T09:17:58.952Z info: Subcategory results aggregation completed.
+2024-10-15T09:18:08.953Z info: Subcategory results aggregation completed.
+2024-10-15T09:18:18.965Z info: Subcategory results aggregation completed.
+2024-10-15T09:18:28.979Z info: Subcategory results aggregation completed.
+2024-10-15T09:18:38.984Z info: Subcategory results aggregation completed.
+2024-10-15T09:18:48.983Z info: Subcategory results aggregation completed.
+2024-10-15T09:18:58.988Z info: Subcategory results aggregation completed.
+2024-10-15T09:19:09.148Z info: Subcategory results aggregation completed.
+2024-10-15T09:19:19.004Z info: Subcategory results aggregation completed.
+2024-10-15T09:19:29.020Z info: Subcategory results aggregation completed.
+2024-10-15T09:19:39.023Z info: Subcategory results aggregation completed.
+2024-10-15T09:19:49.032Z info: Subcategory results aggregation completed.
+2024-10-15T09:19:59.047Z info: Subcategory results aggregation completed.
+2024-10-15T09:20:18.588Z info: Subcategory results aggregation completed.
+2024-10-15T09:20:35.557Z info: Subcategory results aggregation completed.
+2024-10-15T09:20:45.548Z info: Subcategory results aggregation completed.
+2024-10-15T09:20:55.574Z info: Subcategory results aggregation completed.
+2024-10-15T09:21:05.577Z info: Subcategory results aggregation completed.
+2024-10-15T09:21:28.347Z info: Subcategory results aggregation completed.
+2024-10-15T09:21:38.346Z info: Subcategory results aggregation completed.
+2024-10-15T09:21:48.353Z info: Subcategory results aggregation completed.
+2024-10-15T09:22:05.985Z info: Subcategory results aggregation completed.
+2024-10-15T09:22:15.983Z info: Subcategory results aggregation completed.
+2024-10-15T09:22:25.986Z info: Subcategory results aggregation completed.
+2024-10-15T09:22:35.997Z info: Subcategory results aggregation completed.
+2024-10-15T09:22:45.991Z info: Subcategory results aggregation completed.
+2024-10-15T09:22:55.992Z info: Subcategory results aggregation completed.
+2024-10-15T09:23:06.009Z info: Subcategory results aggregation completed.
+2024-10-15T09:23:16.019Z info: Subcategory results aggregation completed.
+2024-10-15T09:23:26.027Z info: Subcategory results aggregation completed.
+2024-10-15T09:23:36.034Z info: Subcategory results aggregation completed.
+2024-10-15T09:23:46.046Z info: Subcategory results aggregation completed.
+2024-10-15T09:24:07.297Z info: Subcategory results aggregation completed.
+2024-10-15T09:24:17.306Z info: Subcategory results aggregation completed.
+2024-10-15T09:24:27.301Z info: Subcategory results aggregation completed.
+2024-10-15T09:25:03.844Z info: Subcategory results aggregation completed.
+2024-10-15T09:25:13.841Z info: Subcategory results aggregation completed.
+2024-10-15T10:07:38.901Z info: Subcategory results aggregation completed.
+2024-10-15T10:07:42.514Z info: Subcategory results aggregation completed.
+2024-10-15T10:07:52.511Z info: Subcategory results aggregation completed.
+2024-10-15T10:08:02.519Z info: Subcategory results aggregation completed.
+2024-10-15T10:08:12.532Z info: Subcategory results aggregation completed.
+2024-10-15T10:08:22.547Z info: Subcategory results aggregation completed.
+2024-10-15T10:08:32.580Z info: Subcategory results aggregation completed.
+2024-10-15T10:08:42.580Z info: Subcategory results aggregation completed.
+2024-10-15T10:08:52.589Z info: Subcategory results aggregation completed.
+2024-10-15T10:09:02.598Z info: Subcategory results aggregation completed.
+2024-10-15T10:09:12.601Z info: Subcategory results aggregation completed.
+2024-10-15T10:09:22.602Z info: Subcategory results aggregation completed.
+2024-10-15T10:09:32.605Z info: Subcategory results aggregation completed.
+2024-10-15T10:09:42.619Z info: Subcategory results aggregation completed.
+2024-10-15T10:09:52.634Z info: Subcategory results aggregation completed.
+2024-10-15T10:10:02.637Z info: Subcategory results aggregation completed.
+2024-10-15T10:10:12.641Z info: Subcategory results aggregation completed.
+2024-10-15T10:10:22.656Z info: Subcategory results aggregation completed.
+2024-10-15T10:10:32.665Z info: Subcategory results aggregation completed.
+2024-10-15T10:10:42.673Z info: Subcategory results aggregation completed.
+2024-10-15T10:10:52.683Z info: Subcategory results aggregation completed.
+2024-10-15T10:11:02.687Z info: Subcategory results aggregation completed.
+2024-10-15T10:11:12.690Z info: Subcategory results aggregation completed.
+2024-10-15T10:11:22.709Z info: Subcategory results aggregation completed.
+2024-10-15T10:11:32.708Z info: Subcategory results aggregation completed.
+2024-10-15T10:11:42.721Z info: Subcategory results aggregation completed.
+2024-10-15T10:11:52.744Z info: Subcategory results aggregation completed.
+2024-10-15T10:12:02.754Z info: Subcategory results aggregation completed.
+2024-10-15T10:12:12.763Z info: Subcategory results aggregation completed.
+2024-10-15T10:12:22.771Z info: Subcategory results aggregation completed.
+2024-10-15T10:12:32.774Z info: Subcategory results aggregation completed.
+2024-10-15T10:12:42.778Z info: Subcategory results aggregation completed.
+2024-10-15T10:12:52.792Z info: Subcategory results aggregation completed.
+2024-10-15T10:13:02.820Z info: Subcategory results aggregation completed.
+2024-10-15T10:13:12.842Z info: Subcategory results aggregation completed.
+2024-10-15T10:13:22.842Z info: Subcategory results aggregation completed.
+2024-10-15T10:13:32.824Z info: Subcategory results aggregation completed.
+2024-10-15T10:13:42.841Z info: Subcategory results aggregation completed.
+2024-10-15T10:13:52.827Z info: Subcategory results aggregation completed.
+2024-10-15T10:14:02.838Z info: Subcategory results aggregation completed.
+2024-10-15T10:14:12.851Z info: Subcategory results aggregation completed.
+2024-10-15T10:14:22.867Z info: Subcategory results aggregation completed.
+2024-10-15T10:14:32.864Z info: Subcategory results aggregation completed.
+2024-10-15T10:14:42.882Z info: Subcategory results aggregation completed.
+2024-10-15T10:14:52.896Z info: Subcategory results aggregation completed.
+2024-10-15T10:15:02.906Z info: Subcategory results aggregation completed.
+2024-10-15T10:15:12.923Z info: Subcategory results aggregation completed.
+2024-10-15T10:15:22.915Z info: Subcategory results aggregation completed.
+2024-10-15T10:15:32.928Z info: Subcategory results aggregation completed.
+2024-10-15T10:15:42.934Z info: Subcategory results aggregation completed.
+2024-10-15T10:15:52.941Z info: Subcategory results aggregation completed.
+2024-10-15T10:16:02.976Z info: Subcategory results aggregation completed.
+2024-10-15T10:16:12.960Z info: Subcategory results aggregation completed.
+2024-10-15T10:16:22.968Z info: Subcategory results aggregation completed.
+2024-10-15T10:16:32.978Z info: Subcategory results aggregation completed.
+2024-10-15T10:16:42.996Z info: Subcategory results aggregation completed.
+2024-10-15T10:16:53.000Z info: Subcategory results aggregation completed.
+2024-10-15T10:17:03.010Z info: Subcategory results aggregation completed.
+2024-10-15T10:17:13.014Z info: Subcategory results aggregation completed.
+2024-10-15T10:17:23.035Z info: Subcategory results aggregation completed.
+2024-10-15T10:17:33.031Z info: Subcategory results aggregation completed.
+2024-10-15T10:17:43.032Z info: Subcategory results aggregation completed.
+2024-10-15T10:17:53.054Z info: Subcategory results aggregation completed.
+2024-10-15T10:18:03.051Z info: Subcategory results aggregation completed.
+2024-10-15T10:18:13.052Z info: Subcategory results aggregation completed.
+2024-10-15T10:18:23.065Z info: Subcategory results aggregation completed.
+2024-10-15T10:18:33.079Z info: Subcategory results aggregation completed.
+2024-10-15T10:18:43.084Z info: Subcategory results aggregation completed.
+2024-10-15T10:18:53.083Z info: Subcategory results aggregation completed.
+2024-10-15T10:19:03.097Z info: Subcategory results aggregation completed.
+2024-10-15T10:19:13.108Z info: Subcategory results aggregation completed.
+2024-10-15T10:19:23.156Z info: Subcategory results aggregation completed.
+2024-10-15T10:19:33.140Z info: Subcategory results aggregation completed.
+2024-10-15T10:19:43.145Z info: Subcategory results aggregation completed.
+2024-10-15T10:19:53.153Z info: Subcategory results aggregation completed.
+2024-10-15T10:20:03.156Z info: Subcategory results aggregation completed.
+2024-10-15T10:20:13.180Z info: Subcategory results aggregation completed.
+2024-10-15T10:20:23.178Z info: Subcategory results aggregation completed.
+2024-10-15T10:20:33.185Z info: Subcategory results aggregation completed.
+2024-10-15T10:20:43.188Z info: Subcategory results aggregation completed.
+2024-10-15T10:20:53.268Z info: Subcategory results aggregation completed.
+2024-10-15T10:21:03.203Z info: Subcategory results aggregation completed.
+2024-10-15T10:21:13.212Z info: Subcategory results aggregation completed.
+2024-10-15T10:21:23.279Z info: Subcategory results aggregation completed.
+2024-10-15T10:21:33.247Z info: Subcategory results aggregation completed.
+2024-10-15T10:21:43.260Z info: Subcategory results aggregation completed.
+2024-10-15T10:21:53.268Z info: Subcategory results aggregation completed.
+2024-10-15T10:22:03.293Z info: Subcategory results aggregation completed.
+2024-10-15T10:22:13.295Z info: Subcategory results aggregation completed.
+2024-10-15T10:22:23.308Z info: Subcategory results aggregation completed.
+2024-10-15T10:22:33.328Z info: Subcategory results aggregation completed.
+2024-10-15T10:22:43.329Z info: Subcategory results aggregation completed.
+2024-10-15T10:22:53.350Z info: Subcategory results aggregation completed.
+2024-10-15T10:23:03.352Z info: Subcategory results aggregation completed.
+2024-10-15T10:23:13.362Z info: Subcategory results aggregation completed.
+2024-10-15T10:23:23.452Z info: Subcategory results aggregation completed.
+2024-10-15T10:23:33.386Z info: Subcategory results aggregation completed.
+2024-10-15T10:23:43.392Z info: Subcategory results aggregation completed.
+2024-10-15T10:23:53.401Z info: Subcategory results aggregation completed.
+2024-10-15T10:24:03.408Z info: Subcategory results aggregation completed.
+2024-10-15T10:24:13.513Z info: Subcategory results aggregation completed.
+2024-10-15T10:24:23.473Z info: Subcategory results aggregation completed.
+2024-10-15T10:24:33.486Z info: Subcategory results aggregation completed.
+2024-10-15T10:24:43.496Z info: Subcategory results aggregation completed.
+2024-10-15T10:24:53.503Z info: Subcategory results aggregation completed.
+2024-10-15T10:25:03.513Z info: Subcategory results aggregation completed.
+2024-10-15T10:25:43.048Z info: Subcategory results aggregation completed.
+2024-10-15T10:25:53.015Z info: Subcategory results aggregation completed.
+2024-10-15T10:26:03.063Z info: Subcategory results aggregation completed.
+2024-10-15T10:26:13.157Z info: Subcategory results aggregation completed.
+2024-10-15T10:26:23.069Z info: Subcategory results aggregation completed.
+2024-10-15T10:26:33.076Z info: Subcategory results aggregation completed.
+2024-10-15T10:26:43.075Z info: Subcategory results aggregation completed.
+2024-10-15T10:26:53.088Z info: Subcategory results aggregation completed.
+2024-10-15T10:27:03.089Z info: Subcategory results aggregation completed.
+2024-10-15T10:27:13.101Z info: Subcategory results aggregation completed.
+2024-10-15T10:27:23.103Z info: Subcategory results aggregation completed.
+2024-10-15T10:27:42.594Z info: Subcategory results aggregation completed.
