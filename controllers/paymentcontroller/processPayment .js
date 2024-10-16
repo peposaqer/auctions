@@ -370,7 +370,7 @@ const approvePayment = async (req, res, next) => {
       await notification.save({ session });
       await sendFirebaseNotification(payment.winnerid.userId, `Payment Approved message:${message}`, notification.message);
     } else if (action === 'reject') {
-     await Payment.findByIdAndDelete(paymentId)
+     await Payment.findByIdAndDelete(paymentId)    
       
       const notification = new Notification({
         userId: payment.winnerid.userId._id,
