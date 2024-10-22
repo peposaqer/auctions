@@ -1,6 +1,28 @@
 const User = require('../../models/User');
 const Transaction = require('../../models/Transaction');
 const mongoose = require('mongoose');
+const admin = require('../../firebase/firebaseAdmin'); 
+const Notification = require('../../models/notification');
+// Firebase Admin SDK
+const sendFirebaseNotification = async (user, title, body) => {
+  if (user && user.fcmToken) {
+    const message = {
+      notification: {
+        title,
+        body,
+      },
+      token: user.fcmToken,
+    };
+    try {
+      await admin.messaging().send(message);
+      console.log('Notification sent successfully');
+    } catch (error) {
+      console.error('Error sending notification:', error);
+    }
+  } else {
+    console.error('User FCM token not found or invalid');
+  }
+};
 exports.getAllTransactions = async (req, res) => {
     try {
       const transactions = await Transaction.find().populate('userId', 'name phoneNumber walletBalance walletTransactions').populate('adminId', 'username');
@@ -111,8 +133,16 @@ exports.addToWallet = async (req, res) => {
       adminId
     });
 
+    const notification = new Notification({
+      userId: user._id,
+      message: 'Deposit remaining balance refunded',
+      itemId: null,
+      type: 'admin deposit ',
+    });
     await transaction.save({ session });
     await session.commitTransaction();
+    await sendFirebaseNotification(user, 'Deposit remaining balance refunded', `Your deposit for has been refunded.`);
+
     session.endSession();
 
     res.status(200).json({ message: 'Deposit successful', user, transaction });
