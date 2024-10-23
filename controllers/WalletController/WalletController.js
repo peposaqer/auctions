@@ -3,6 +3,8 @@ const Transaction = require('../../models/Transaction');
 const mongoose = require('mongoose');
 const admin = require('../../firebase/firebaseAdmin'); 
 const Notification = require('../../models/notification');
+const factory = require('../../utils/apiFactory');
+exports.getAllRefund=factory.getAll(Transaction)
 // Firebase Admin SDK
 const sendFirebaseNotification = async (user, title, body) => {
   if (user && user.fcmToken) {
@@ -97,7 +99,7 @@ exports.withdrawFromWallet = async (req, res) => {
 };
 
 exports.addToWallet = async (req, res) => {
-  const { userId, amount,adminId } = req.body;
+  const { userId, amount,adminId,subcategory } = req.body;
   // const adminId = req.admin._id;
   // const adminId = '668e669e2df2923c9d5f27e7';
 
@@ -127,6 +129,7 @@ exports.addToWallet = async (req, res) => {
 
     const transaction = new Transaction({
       userId: user._id,
+      subcategory,
       amount,
       type: 'deposit',
       description: 'Admin deposit',

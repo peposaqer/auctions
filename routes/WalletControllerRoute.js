@@ -12,6 +12,8 @@ getAllTransactions,updateTransaction
 router.post('/withdraw', withdrawFromWallet);
 router.post('/deposit', addToWallet);
 router.get('/transactions', getAllTransactions);
+router.get('/transactions', getAllTransactions);
+
 router.put('/transactions', updateTransaction);
 router.delete('/transactions', deleteTransaction);
 

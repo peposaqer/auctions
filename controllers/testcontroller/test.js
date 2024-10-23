@@ -594,6 +594,209 @@ const factory = require('../../utils/apiFactory');
 
 /////////////////////////////////////////////////////////////////////////////
 // new
+//the last version
+// exports.SubcategoryResult = async (req, res) => {
+//   const subcategoryId = new mongoose.Types.ObjectId(req.params.subcategoryId); // Single subcategoryId from request parameters
+//   const statusFilter = req.query.status || 'winner'; // Default status filter is 'winner'
+
+//   try {
+//     let itemDetails = await SubcategoryResult.aggregate([
+//       { 
+//         $match: { 
+//           subcategory: subcategoryId,  // Match the single subcategoryId
+//           status: statusFilter  // Match the provided status or default to 'winner'
+//         }
+//       },
+//       {
+//         $lookup: {
+//           from: 'winners',
+//           localField: 'results',
+//           foreignField: '_id',
+//           as: 'winnerDetails',
+//         },
+//       },
+//       {
+//         $lookup: {
+//           from: 'subcategories',
+//           localField: 'subcategory',
+//           foreignField: '_id',
+//           as: 'subcategoryDetails',
+//         },
+//       },
+//       { $unwind: '$subcategoryDetails' },
+//       {
+//         $lookup: {
+//           from: 'categories',
+//           localField: 'subcategoryDetails.categoryId',
+//           foreignField: '_id',
+//           as: 'categoryDetails',
+//         },
+//       },
+//       { $unwind: '$categoryDetails' },
+//       {
+//         $lookup: {
+//           from: 'payments',
+//           localField: '_id',
+//           foreignField: 'winnerid',
+//           as: 'paymentDetails',
+//         },
+//       },
+//       {
+//         $lookup: {
+//           from: 'items',
+//           localField: 'winnerDetails.itemId',
+//           foreignField: '_id',
+//           as: 'itemDetails',
+//         },
+//       },
+//       {
+//         $lookup: {
+//           from: 'users', // Add lookup to get user details
+//           localField: 'userId',
+//           foreignField: '_id',
+//           as: 'userDetails',
+//         },
+//       },
+//       { $unwind: '$userDetails' }, // Ensure single user object
+//       {
+//         $addFields: {
+//           totalAmount: {
+//             $sum: {
+//               $map: {
+//                 input: '$winnerDetails',
+//                 as: 'winner',
+//                 in: {
+//                   $cond: {
+//                     if: { $eq: ['$$winner.status', 'winner'] },
+//                     then: '$$winner.amount',
+//                     else: 0
+//                   }
+//                 }
+//               }
+//             }
+//           },
+//           payed: {
+//             $cond: {
+//               if: {
+//                 $gt: [{
+//                   $size: {
+//                     $filter: {
+//                       input: '$paymentDetails',
+//                       as: 'payment',
+//                       cond: {
+//                         $or: [
+//                           { $eq: ['$$payment.status', 'pending'] },
+//                           { $eq: ['$$payment.status', 'rejected'] },
+//                           { $eq: ['$$payment.status', 'completed'] }
+//                         ]
+//                       }
+//                     }
+//                   }
+//                 }, 0]
+//               },
+//               then: {
+//                 $cond: {
+//                   if: {
+//                     $or: [
+//                       { $eq: [{ $arrayElemAt: ['$paymentDetails.status', 0] }, 'completed'] },
+//                       { $eq: [{ $arrayElemAt: ['$paymentDetails.status', 0] }, 'pending'] },
+//                       { $eq: [{ $arrayElemAt: ['$paymentDetails.status', 0] }, 'rejected'] }
+//                     ]
+//                   },
+//                   then: { $arrayElemAt: ['$paymentDetails.status', 0] },
+//                   else: false
+//                 }
+//               },
+//               else: false
+//             }
+//           },
+//           items: {
+//             $filter: {
+//               input: {
+//                 $map: {
+//                   input: '$winnerDetails',
+//                   as: 'winner',
+//                   in: {
+//                     _id: '$$winner._id',
+//                     itemId: '$$winner.itemId',
+//                     item: {
+//                       $arrayElemAt: [
+//                         {
+//                           $filter: {
+//                             input: '$itemDetails',
+//                             as: 'item',
+//                             cond: { $eq: ['$$item._id', '$$winner.itemId'] }
+//                           }
+//                         },
+//                         0
+//                       ]
+//                     },
+//                     amount: '$$winner.amount',
+//                     totalPaid: '$$winner.totalPaid',  // Include totalPaid from the winner schema
+//                     status: '$$winner.status',
+//                     adminApproval: '$$winner.adminApproval',
+//                     paymentDetails: {
+//                       $filter: {
+//                         input: '$paymentDetails',
+//                         as: 'payment',
+//                         cond: { $eq: ['$$payment.winnerid', '$$winner._id'] }
+//                       }
+//                     },
+//                     commission1: {
+//                       $multiply: [
+//                         { $arrayElemAt: ['$itemDetails.startPrice', { $indexOfArray: ['$itemDetails._id', '$$winner.itemId'] }] },
+//                         { $divide: [{ $arrayElemAt: ['$itemDetails.commission1', { $indexOfArray: ['$itemDetails._id', '$$winner.itemId'] }] }, 100] }
+//                       ]
+//                     },
+//                     commission2: {
+//                       $multiply: [
+//                         { $arrayElemAt: ['$itemDetails.startPrice', { $indexOfArray: ['$itemDetails._id', '$$winner.itemId'] }] },
+//                         { $divide: [{ $arrayElemAt: ['$itemDetails.commission2', { $indexOfArray: ['$itemDetails._id', '$$winner.itemId'] }] }, 100] }
+//                       ]
+//                     },
+//                     commission3: {
+//                       $multiply: [
+//                         { $arrayElemAt: ['$itemDetails.startPrice', { $indexOfArray: ['$itemDetails._id', '$$winner.itemId'] }] },
+//                         { $divide: [{ $arrayElemAt: ['$itemDetails.commission3', { $indexOfArray: ['$itemDetails._id', '$$winner.itemId'] }] }, 100] }
+//                       ]
+//                     }
+//                   }
+//                 }
+//               },
+//               as: 'item',
+//               cond: { $eq: ['$$item.adminApproval', true] } // Only include items where adminApproval is true
+//             }
+//           }
+//         }
+//       },
+//       {
+//         $project: {
+//           _id: 0,
+//           subcategoryId: '$subcategoryDetails._id',
+//           subcategoryName: '$subcategoryDetails.name',
+//           categoryName: '$categoryDetails.name',
+//           deposit: '$subcategoryDetails.deposit',
+//           totalAmount: 1,
+//           payed: 1,
+//           items: 1,
+//           userName: '$userDetails.name',  // Populate user name
+//           userPhone: '$userDetails.phoneNumber',
+//           userid: '$userDetails._id', // Populate user phone
+//            // Populate user phone
+//         }
+//       }
+//     ]);
+
+//     if (!itemDetails.length) {
+//       return res.status(404).json({ message: 'No items found for the specified subcategory and status.' });
+//     }
+
+//     res.status(200).json({ status: "success", itemDetails });
+//   } catch (error) {
+//     console.error(error);
+//     res.status(500).json({ message: 'Internal server error' });
+//   }
+// };
 
 exports.SubcategoryResult = async (req, res) => {
   const subcategoryId = new mongoose.Types.ObjectId(req.params.subcategoryId); // Single subcategoryId from request parameters
@@ -601,8 +804,8 @@ exports.SubcategoryResult = async (req, res) => {
 
   try {
     let itemDetails = await SubcategoryResult.aggregate([
-      { 
-        $match: { 
+      {
+        $match: {
           subcategory: subcategoryId,  // Match the single subcategoryId
           status: statusFilter  // Match the provided status or default to 'winner'
         }
@@ -658,6 +861,28 @@ exports.SubcategoryResult = async (req, res) => {
         },
       },
       { $unwind: '$userDetails' }, // Ensure single user object
+      {
+        $lookup: {
+          from: 'transactions', // Lookup in transactions for userId and subcategory
+          let: { userId: '$userDetails._id', subcategoryId: '$subcategoryDetails._id' },
+          pipeline: [
+            {
+              $match: {
+                $expr: {
+                  $and: [
+                    { $eq: ['$userId', '$$userId'] },
+                    { $eq: ['$subcategory', '$$subcategoryId'] }
+                  ]
+                }
+              }
+            },
+            {
+              $project: { _id: 1 } // We only need the existence of a transaction, not its details
+            }
+          ],
+          as: 'transactionDetails',
+        },
+      },
       {
         $addFields: {
           totalAmount: {
@@ -766,6 +991,13 @@ exports.SubcategoryResult = async (req, res) => {
               as: 'item',
               cond: { $eq: ['$$item.adminApproval', true] } // Only include items where adminApproval is true
             }
+          },
+          refund: {
+            $cond: {
+              if: { $gt: [{ $size: '$transactionDetails' }, 0] },
+              then: true,
+              else: false
+            }
           }
         }
       },
@@ -779,10 +1011,10 @@ exports.SubcategoryResult = async (req, res) => {
           totalAmount: 1,
           payed: 1,
           items: 1,
+          refund: 1, // Include refund status
           userName: '$userDetails.name',  // Populate user name
           userPhone: '$userDetails.phoneNumber',
           userid: '$userDetails._id', // Populate user phone
-           // Populate user phone
         }
       }
     ]);
@@ -797,6 +1029,8 @@ exports.SubcategoryResult = async (req, res) => {
     res.status(500).json({ message: 'Internal server error' });
   }
 };
+
+
 ///////////////////////////////////////////////////////////////////////////////////////
 
 

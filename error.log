@@ -1020,3 +1020,7 @@
     at ConnectionPool.interruptInUseConnections (G:\auctions\node_modules\mongodb\lib\cmap\connection_pool.js:264:36)
     at G:\auctions\node_modules\mongodb\lib\cmap\connection_pool.js:252:41
     at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+2024-10-23T09:13:58.193Z error: Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:217:20)
+2024-10-23T09:28:03.085Z error: Error: read ECONNRESET
+    at TLSWrap.onStreamRead (node:internal/stream_base_commons:217:20)
