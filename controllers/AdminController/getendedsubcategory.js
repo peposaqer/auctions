@@ -665,7 +665,6 @@ exports.adminActionOnWinner = async (req, res) => {
             // Remove winner from SubcategoryResult
             const subcategoryResult = await SubcategoryResult.findOne({ userId: user._id, subcategory: subcategory,status: 'winner' });
             console.log("winner",winner._id)
-console.log(subcategoryResult.results)
 
 
         if (subcategoryResult && subcategoryResult.results.includes(winner._id)) {
